@@ -10,4 +10,6 @@
 // getDate(1481020142, 'de-DE') -> '06.12.2016' (format->'dd.mm.yyyy')
 // getDate(1481020142, 'hu-HU') -> '2016. 12. 06.' (format->'yyyy. mm. dd.')
 
-const getDate = (uts, loc) => {};
+const getDate = (uts, loc) => {
+    
+};
