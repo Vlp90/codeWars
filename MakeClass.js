@@ -1,3 +1,5 @@
+// Exercice classses
+
 // I don't like writing classes like this:
 
 // function Animal(name,species,age,health,weight,color) {
