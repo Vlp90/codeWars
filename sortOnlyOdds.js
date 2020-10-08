@@ -6,3 +6,17 @@
 // Example
 
 // sortArray([5, 3, 2, 8, 1, 4]) == [1, 3, 2, 8, 5, 4]
+
+const sortArray = (array) => {
+
+    tab = [];
+  
+    array
+      .filter((v, i) => v % 2 && tab.push(i))
+      .sort((a, b) => a - b)
+      .forEach((v, i) => (array[tab[i]] = v));
+  
+    return array;
+  };
+
+console.log(sortArray([5, 3, 2, 8, 1, 4]));
