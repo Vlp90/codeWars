@@ -17,9 +17,10 @@ const sumPairs = (array, value) => {
   }
   //   return answer
   final = answer.join(" et ");
-  return `L'entier ${value} peut être optenu en additionant les pairs suivantes : ${final}`;
+  return `L'entier ${value} peut être obtenu en additionnant les paires suivantes : ${final}`;
 };
 
 console.log(
-  sumPairs([1, 1, 2, 3, 5, 6, 12, 13, 15, 15, 16, 18, 20, 27, 29], 8)
-);
+  sumPairs([1, 1, 2, 3, 5, 6, 12, 13, 15, 15, 16, 18, 20, 27, 29], 8));
+
+  // OUTPUT : L'entier 8 peut être obtenu en additionnant les paires suivantes : 5,3 et 6,2
