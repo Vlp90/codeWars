@@ -7,3 +7,13 @@
 
 // name + " plays banjo" 
 // name + " does not play banjo"
+
+const areYouPlayingBanjo = (name) => {
+    if (name.charAt(0) === "r" || name.charAt(0) === "R") {
+        return name + " plays banjo" 
+    } else {
+        return name + " does not play banjo"
+    }
+}
+
+console.log(areYouPlayingBanjo("Rlad"))
