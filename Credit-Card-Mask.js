@@ -21,5 +21,7 @@ const maskify = (cc) => {
   }
 };
 
+
+
 console.log(maskify("vladimir"));
 console.log(maskify("1"));
