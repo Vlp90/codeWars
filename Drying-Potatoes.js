@@ -1,23 +1,29 @@
-// All we eat is water and dry matter.
+// Tout ce que nous mangeons, c'est de l'eau et de la matière sèche.
 
-// John bought potatoes: their weight is 100 kilograms. Potatoes contain water and dry matter.
+// John a acheté des pommes de terre: leur poids est de 100 kilogrammes. Les pommes de terre contiennent de l'eau et de la matière sèche.
 
-// The water content is 99 percent of the total weight. He thinks they are too wet and puts them in an oven - at low temperature - for them to lose some water.
+// La teneur en eau est de 99 pour cent du poids total. 
+// Il pense qu'ils sont trop humides et les met dans un four - à basse température - pour qu'ils perdent de l'eau.
 
-// At the output the water content is only 98%.
+// À la sortie, la teneur en eau n'est que de 98%.
 
-// What is the total weight in kilograms (water content plus dry matter) coming out of the oven?
+// Quel est le poids total en kilogrammes (teneur en eau plus matière sèche) sortant du four?
 
-// He finds 50 kilograms and he thinks he made a mistake: "So much weight lost for such a small change in water content!"
+// Il trouve 50 kilos et il pense avoir commis une erreur: "Tant de poids perdu pour un si petit changement de teneur en eau!"
 
-// Can you help him?
+// Pouvez vous l'aider?
 
-// Write function potatoes with
+// Fonction d'écriture potatoesavec
 
-// int parameter p0 - initial percent of water-
-// int parameter w0 - initial weight -
-// int parameter p1 - final percent of water -
-// potatoesshould return the final weight coming out of the oven w1 truncated as an int.
+// paramètre int p0- pourcentage initial d'eau-
+// paramètre int w0- poids initial -
+// paramètre int p1- pourcentage final d'eau -
+// potatoesdevrait renvoyer le poids final sortant du four w1tronqué comme un int.
 
-// Example:
-// potatoes(99, 100, 98) --> 50
+const potatoes = (p0, w0, p1) => {
+    return Math.floor(w0 * (100 - p0) / (100 - p1))
+}
+
+console.log(potatoes(99,100,98)) // 50
+console.log(potatoes(80,127,80)) // 114
+console.log(potatoes(93,129,91)) // 100
